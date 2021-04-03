@@ -39,8 +39,9 @@ Original App Design Project - README Template
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can set a reminder for a task at a certain time.
+* User can see different categories of healthy quotes/tips.
+* App accesses the Canvas API which will automatically pull assignments from the API instead of creating assignments.
 
 ### 2. Screen Archetypes
 
