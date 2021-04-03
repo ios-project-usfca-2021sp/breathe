@@ -45,29 +45,36 @@ Original App Design Project - README Template
 
 ### 2. Screen Archetypes
 
-* [The welcome page will be the first initial page the user sees.]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
+* The welcome page will be the first initial page the user sees.
+   * Along with the welcome page the user will be allowed to sign up.
+   * Along with the welcome page the user will be allowed to login.
+* The second screen that the user will encounter is the motivation page which consists of quotes and health-based content.
+
+   * The third page the user will interact with is the to-do list page where they add their tasks they want to accomplish.
+
    * ...
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* On the tab navigation bar the user will be able to go to the motivational screen.
+
+* On the tab navigation bar the user will have the option to go to the to-do list tab.
+
+* 
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* The first initial page the user will see is the motivational page from there the user can click on the to-do list from the navigation bar.
+
+   * 
+   * 
+* The second tab on the navigation bar is the to-do list which consists of different components.
+
+   * From the to-do list screen the user is able to add a task that will involve another screen which allows the user to add the details of that task.
+
+   *
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
