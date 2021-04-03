@@ -66,7 +66,7 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
    * From the to-do list screen the user is able to add a task that will involve another screen which allows the user to add the details of that task.
 
 ## Wireframes
-<img src="https://github.com/ios-project-usfca-2021sp/breathe/blob/readme-cw-week1/ReadmeRes/wireframe_v1.jpg" width=800 alt="Please contact @mialsy if you cannot see this img">
+<img src="https://github.com/ios-project-usfca-2021sp/breathe/blob/main/ReadmeRes/wireframe_v1.jpg" width=800 alt="Please contact @mialsy if you cannot see this img">
 
 <!--
 ## Schema 
