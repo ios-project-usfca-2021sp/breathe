@@ -45,7 +45,7 @@ Original App Design Project - README Template
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
+* [The welcome page will be the first initial page the user sees.]
    * [list associated required story here]
    * ...
 * [list second screen here]
