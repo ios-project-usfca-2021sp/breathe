@@ -7,16 +7,15 @@
 
 ## Overview
 ### Description
-[Description of your app]
+Keeps track of user’s daily tasks/goals and allows them to set reminders throughout the day until their goal has been completed. Will also include a motivational section that will send the user a new motivational quote or video to inspire them every day.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Health/Productivity
+- **Mobile:** This app would be primarily developed for cell phones, but would perhaps be available for tablets and computers as well. Functionality would be similar across all types of devices with a potential for new features to be added in the future.
+- **Story:** Keeps track of user’s daily goals and sends them reminders throughout their day until they have completed the goal. Will also have a motivational tab that will give the user health or motivational tips/videos to help push them to achieve their goals.
+- **Market:** Any individual could choose to use this app, and it is great for anyone who is struggling to get things done in their day or needs a place to write everything down.
+- **Habit:** This app could be used as often as the user wanted depending on how much they are struggling with getting things done and need some motivation in life.
+- **Scope:** First we would start with allowing the user to add their goals and they will be able to set when they want reminders to be sent during the day. The second feature of this app will randomly send the user motivational quotes or videos to help them achieve their goals.
 
 ## Product Spec
 
