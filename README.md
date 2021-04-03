@@ -74,6 +74,15 @@
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+#### List of network requests by each screen:
+   - Login screen:
+      - post for login
+   - Register screen:
+      - post for reigister
+   - ToDo screen:
+      - all actions are local
+   - Motivation screen:
+      - get motivational quotes
+      - get health tips
+
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
