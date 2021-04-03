@@ -28,8 +28,14 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User see app icon in home screen with a styled launch screen.
+* User can log in.
+* User can log out.
+* User can see a list of tasks on the main screen
+* User can add a task.
+* User can delete a task.
+* User can see a motivational section with with healthy quotes/tips.
+* User can see a new quote when the button is pressed.
 
 **Optional Nice-to-have Stories**
 
