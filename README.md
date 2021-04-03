@@ -69,7 +69,6 @@
 ## Wireframes
 <img src="https://github.com/ios-project-usfca-2021sp/breathe/blob/readme-cw-week1/ReadmeRes/wireframe_v1.jpg" width=800 alt="Please contact @mialsy if you cannot see this img">
 
-<!--
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
@@ -78,4 +77,3 @@
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
--->
