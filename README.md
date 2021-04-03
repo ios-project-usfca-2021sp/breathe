@@ -1,8 +1,4 @@
-Original App Design Project - README Template
-===
-
-# APP_NAME_HERE
-
+# Breathe
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
@@ -62,28 +58,18 @@ Original App Design Project - README Template
 
 * On the tab navigation bar the user will have the option to go to the to-do list tab.
 
-* 
-
 **Flow Navigation** (Screen to Screen)
 
 * The first initial page the user will see is the motivational page from there the user can click on the to-do list from the navigation bar.
 
-   * 
-   * 
 * The second tab on the navigation bar is the to-do list which consists of different components.
 
    * From the to-do list screen the user is able to add a task that will involve another screen which allows the user to add the details of that task.
 
-   *
-
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/ios-project-usfca-2021sp/breathe/blob/readme-cw-week1/ReadmeRes/wireframe_v1.jpg" width=800 alt="Please contact @mialsy if you cannot see this img">
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
+<!--
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
@@ -92,3 +78,4 @@ Original App Design Project - README Template
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+-->
