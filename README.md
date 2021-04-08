@@ -137,5 +137,3 @@
             }
       }
       ```
-
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
