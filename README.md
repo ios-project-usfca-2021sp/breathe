@@ -112,12 +112,12 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
       ```swift
       let query = PFQuery(className:"Quotes")
       query.includeKeys(["quote_id"])
-      query.limit = 20
+      query.limit = 1
         
       query.findObjectsInBackground {
-         (posts, error) in
-            if posts != nil {
-                self.posts = posts!
+         (items, error) in
+            if item != nil {
+                self.quote = items[0]!
                 self.tableView.reloadData()
             }
       }
@@ -126,12 +126,12 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
       ```swift
       let query = PFQuery(className:"Tips")
       query.includeKeys(["tip_id"])
-      query.limit = 20
+      query.limit = 1
         
       query.findObjectsInBackground {
-         (posts, error) in
-            if posts != nil {
-                self.posts = posts!
+         (items, error) in
+            if items != nil {
+                self.tip = items[0]!
                 self.tableView.reloadData()
             }
       }
