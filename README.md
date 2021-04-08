@@ -68,13 +68,71 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 ## Wireframes
 <img src="https://github.com/ios-project-usfca-2021sp/breathe/blob/main/ReadmeRes/wireframe_v1.jpg" width=800 alt="Please contact @mialsy if you cannot see this img">
 
-<!--
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
--->
+#### List of network requests by each screen:
+   - Login screen:
+      - post for login
+      ```swift
+      let username = usernameField.text!
+      let password = passwordFiled.text!
+        
+      PFUser.logInWithUsername(inBackground: username, password: password) {
+         (user, error) in
+            if user != nil {
+               self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+               print("Error: \(String(describing: error?.localizedDescription))")
+            }
+      }
+      ```
+   - Register screen:
+      - post for reigister
+      ```swift
+      let user = PFUser()
+      user.username = usernameField.text!
+      user.password = passwordFiled.text!
+
+      user.signUpInBackground {
+         (success, error) in
+            if success {
+               self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+      }
+      ```
+   - ToDo screen:
+      - all actions are local
+   - Motivation screen:
+      - get motivational quotes
+      ```swift
+      let query = PFQuery(className:"Quotes")
+      query.includeKeys(["quote_id"])
+      query.limit = 20
+        
+      query.findObjectsInBackground {
+         (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+      }
+      ```
+      - get health tips
+      ```swift
+      let query = PFQuery(className:"Tips")
+      query.includeKeys(["tip_id"])
+      query.limit = 20
+        
+      query.findObjectsInBackground {
+         (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+      }
+      ```
