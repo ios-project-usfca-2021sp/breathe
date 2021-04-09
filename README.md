@@ -74,7 +74,24 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 
 |  **Property** | **Type** | **Description** | 
 | ------------- | ------------- | ------------- |
-|fill here|fill here|fill here|
+|objectId|String|Unique id for the user|
+| ------------- | ------------- | ------------- |
+|username|pointer to User|id created for the user|
+| ------------- | ------------- | ------------- |
+|task|String|Task that user creates|
+| ------------- | ------------- | ------------- |
+|alarm|DateTime|Time for the task to be completed|
+| ------------- | ------------- | ------------- |
+|taskDetail|String|Detail of task to be completed|
+| ------------- | ------------- | ------------- |
+|taskCount|Number|Number of tasks to be completed|
+| ------------- | ------------- | ------------- |
+|createdAt|DateTime|Date when task was created|
+| ------------- | ------------- | ------------- |
+|updatedAt|DateTime|Date when task was updated|
+| ------------- | ------------- | ------------- |
+|completedAt|DateTime|Date when task was completed|
+| ------------- | ------------- | ------------- |
 
 ### Networking
 #### List of network requests by each screen:
