@@ -47,7 +47,6 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 
    * The third page the user will interact with is the to-do list page where they add their tasks they want to accomplish.
 
-   * ...
 
 ### 3. Navigation
 
@@ -69,7 +68,6 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 <img src="https://github.com/ios-project-usfca-2021sp/breathe/blob/main/ReadmeRes/wireframe_v1.jpg" width=800 alt="Please contact @mialsy if you cannot see this img">
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 
 |  **Property** | **Type** | **Description** | 
