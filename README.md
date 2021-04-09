@@ -71,7 +71,11 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+|  **Property** | **Type** | **Description** | 
+| ------------- | ------------- | ------------- |
+|fill here|fill here|fill here|
+
 ### Networking
 #### List of network requests by each screen:
    - Login screen:
