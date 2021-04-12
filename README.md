@@ -52,7 +52,7 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 
 **Tab Navigation** (Tab to Screen)
 
-* On the tab navigation bar the user will be able to go to the motivational screen.
+* On the tab navigation bar the user will be able to go to the motivational screen. 
 
 * On the tab navigation bar the user will have the option to go to the to-do list tab.
 
