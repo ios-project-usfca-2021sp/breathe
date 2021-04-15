@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -318,6 +319,67 @@
             </objects>
             <point key="canvasLocation" x="2445" y="-176"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="lSC-7k-K74">
+            <objects>
+                <viewController id="eL1-8I-EML" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zmm-k2-bok">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-Gd-Z2R">
+                                <rect key="frame" x="15" y="616" width="384" height="216"/>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add brief ... " translatesAutoresizingMaskIntoConstraints="NO" id="bir-nl-xR6">
+                                <rect key="frame" x="15" y="74" width="384" height="32"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="h5s-Jf-BE2"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Editing details ..." translatesAutoresizingMaskIntoConstraints="NO" id="Mx0-IW-Z0Y">
+                                <rect key="frame" x="15" y="126" width="384" height="420"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRj-jD-a5u">
+                                <rect key="frame" x="15" y="566" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="set an alarm">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <imageReference key="image" image="alarm" catalog="system" symbolScale="default"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P1z-au-9vo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="19g-RP-GGi"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="cVb-Gd-Z2R" secondAttribute="trailing" constant="15" id="1v1-fz-Gqg"/>
+                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="top" secondItem="bir-nl-xR6" secondAttribute="bottom" constant="20" id="7jI-3Y-VUP"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="Mx0-IW-Z0Y" secondAttribute="trailing" constant="15" id="9nU-38-PgO"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="bottom" secondItem="cVb-Gd-Z2R" secondAttribute="bottom" constant="30" id="AsK-7p-m5v"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IRj-jD-a5u" secondAttribute="trailing" symbolic="YES" id="CZd-qL-Ofz"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="bir-nl-xR6" secondAttribute="trailing" constant="15" id="YpX-Wf-DMd"/>
+                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="dIA-iO-5BU"/>
+                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="gZ4-XS-bNj"/>
+                            <constraint firstItem="bir-nl-xR6" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="jTC-k6-41c"/>
+                            <constraint firstItem="IRj-jD-a5u" firstAttribute="top" secondItem="Mx0-IW-Z0Y" secondAttribute="bottom" constant="20" id="lX0-vH-WdW"/>
+                            <constraint firstItem="bir-nl-xR6" firstAttribute="top" secondItem="P1z-au-9vo" secondAttribute="top" constant="30" id="ljJ-mE-y7V"/>
+                            <constraint firstItem="IRj-jD-a5u" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="z8D-U8-Caj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRX-F7-SNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3334.7826086956525" y="541.74107142857144"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SRE-6n-kdv">
             <objects>
@@ -340,6 +402,10 @@
         <segue reference="l79-f3-EBy"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="alarm" catalog="system" width="124" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
