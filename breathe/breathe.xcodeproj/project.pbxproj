@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47FC919B262E50DF0092E478 /* MotivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC919A262E50DF0092E478 /* MotivationViewController.swift */; };
+		47FC91A0262E93590092E478 /* MotivationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC919F262E93580092E478 /* MotivationCell.swift */; };
 		992005A02622481D00709B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920059F2622481D00709B04 /* AppDelegate.swift */; };
 		992005A22622481D00709B04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005A12622481D00709B04 /* SceneDelegate.swift */; };
 		992005A42622481D00709B04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005A32622481D00709B04 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47FC919A262E50DF0092E478 /* MotivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationViewController.swift; sourceTree = "<group>"; };
+		47FC919F262E93580092E478 /* MotivationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationCell.swift; sourceTree = "<group>"; };
 		9920059C2622481D00709B04 /* breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breathe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9920059F2622481D00709B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		992005A12622481D00709B04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 		992005932622481D00709B04 = {
 			isa = PBXGroup;
 			children = (
+				47FC919F262E93580092E478 /* MotivationCell.swift */,
 				9920059E2622481D00709B04 /* breathe */,
 				992005B52622481F00709B04 /* breatheTests */,
 				992005C02622481F00709B04 /* breatheUITests */,
@@ -103,6 +108,7 @@
 				992005A12622481D00709B04 /* SceneDelegate.swift */,
 				992005A32622481D00709B04 /* ViewController.swift */,
 				992005A52622481D00709B04 /* Main.storyboard */,
+				47FC919A262E50DF0092E478 /* MotivationViewController.swift */,
 				992005A82622481F00709B04 /* Assets.xcassets */,
 				992005AA2622481F00709B04 /* LaunchScreen.storyboard */,
 				992005AD2622481F00709B04 /* Info.plist */,
@@ -260,6 +266,8 @@
 			files = (
 				992005A42622481D00709B04 /* ViewController.swift in Sources */,
 				992005A02622481D00709B04 /* AppDelegate.swift in Sources */,
+				47FC919B262E50DF0092E478 /* MotivationViewController.swift in Sources */,
+				47FC91A0262E93590092E478 /* MotivationCell.swift in Sources */,
 				992005A22622481D00709B04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
