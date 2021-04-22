@@ -465,7 +465,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-Gd-Z2R">
-                                <rect key="frame" x="15" y="562" width="384" height="216"/>
+                                <rect key="frame" x="15" y="562" width="320" height="216"/>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add brief ... " translatesAutoresizingMaskIntoConstraints="NO" id="bir-nl-xR6">
                                 <rect key="frame" x="15" y="30" width="384" height="32"/>
@@ -496,46 +496,48 @@
                                     <imageReference key="image" image="alarm" catalog="system" symbolScale="default"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-uK-njv">
-                                <rect key="frame" x="378" y="46" width="22.5" height="19.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-uK-njv">
+                                <rect key="frame" x="379" y="45" width="21" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="note.text.badge.plus" catalog="system"/>
+                                <state key="normal" backgroundImage="plus.circle" catalog="system"/>
                                 <connections>
                                     <action selector="onAddTask:" destination="eL1-8I-EML" eventType="touchUpInside" id="hCX-yK-sJJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouw-7k-uaS">
-                                <rect key="frame" x="378" y="523.5" width="22.5" height="19"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="calendar.badge.plus" catalog="system"/>
-                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fmr-ad-lBW">
+                                <rect key="frame" x="350" y="562" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitch:" destination="eL1-8I-EML" eventType="valueChanged" id="pVC-Ti-Ely"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P1z-au-9vo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Fmr-ad-lBW" secondAttribute="bottom" constant="20" id="0Vf-Zs-FCJ"/>
                             <constraint firstItem="IRj-jD-a5u" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="1Js-gN-mrW"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="cVb-Gd-Z2R" secondAttribute="trailing" constant="15" id="2h2-0x-5A7"/>
                             <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="Mx0-IW-Z0Y" secondAttribute="trailing" constant="15" id="6wW-f8-7Me"/>
                             <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="top" secondItem="bir-nl-xR6" secondAttribute="bottom" constant="20" id="8d5-nd-hO0"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="V3w-uK-njv" secondAttribute="trailing" constant="15" id="9Bg-Xd-jm9"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="V3w-uK-njv" secondAttribute="trailing" constant="14" id="9Bg-Xd-jm9"/>
                             <constraint firstItem="cVb-Gd-Z2R" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="A10-DE-re1"/>
+                            <constraint firstItem="Fmr-ad-lBW" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="GgY-mf-Cw3"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="Fmr-ad-lBW" secondAttribute="trailing" constant="15" id="M7Z-Nl-593"/>
                             <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="bir-nl-xR6" secondAttribute="trailing" constant="15" id="RLh-RJ-Km1"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="ouw-7k-uaS" secondAttribute="trailing" constant="15" id="Tzc-rk-6fp"/>
                             <constraint firstItem="bir-nl-xR6" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="WPS-RY-VXF"/>
                             <constraint firstItem="P1z-au-9vo" firstAttribute="bottom" secondItem="cVb-Gd-Z2R" secondAttribute="bottom" constant="30" id="WTw-WN-PAH"/>
                             <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="YFL-Ye-QpF"/>
                             <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="IRj-jD-a5u" secondAttribute="trailing" constant="15" id="aMm-UJ-Pgt"/>
                             <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="top" secondItem="V3w-uK-njv" secondAttribute="bottom" constant="17" id="d2I-SI-1Vt"/>
                             <constraint firstItem="bir-nl-xR6" firstAttribute="top" secondItem="P1z-au-9vo" secondAttribute="top" constant="30" id="dDJ-6n-YWo"/>
-                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="top" secondItem="ouw-7k-uaS" secondAttribute="bottom" constant="20" id="kvV-Jk-hzj"/>
                             <constraint firstItem="V3w-uK-njv" firstAttribute="top" secondItem="P1z-au-9vo" secondAttribute="top" constant="44.5" id="rEM-Fd-1Lq"/>
                             <constraint firstItem="cVb-Gd-Z2R" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="zNh-AB-fEL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alarmSwitch" destination="Fmr-ad-lBW" id="iuB-j4-wg9"/>
                         <outlet property="briefField" destination="bir-nl-xR6" id="VDE-Qb-rxO"/>
-                        <outlet property="detailField" destination="Mx0-IW-Z0Y" id="uU1-dz-Dt1"/>
+                        <outlet property="datePicker" destination="cVb-Gd-Z2R" id="fFw-on-Bdv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRX-F7-SNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -548,8 +550,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
-        <image name="calendar.badge.plus" catalog="system" width="128" height="108"/>
-        <image name="note.text.badge.plus" catalog="system" width="128" height="108"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="uncheckedbo" width="225" height="225"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
