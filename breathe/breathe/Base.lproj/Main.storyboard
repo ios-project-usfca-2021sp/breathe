@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Initial Screen-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InitialScreen" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
         <!--RegisterScreen-->
         <scene sceneID="81k-WF-EhF">
             <objects>
-                <viewController title="RegisterScreen" modalPresentationStyle="fullScreen" id="5eO-MK-aaX" sceneMemberID="viewController">
+                <viewController title="RegisterScreen" modalPresentationStyle="fullScreen" id="5eO-MK-aaX" customClass="RegisterViewController" customModule="breathe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYL-7K-Qha">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,8 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="sDl-1g-Omp" kind="presentation" id="HoJ-2O-EoT"/>
+                                    <action selector="OnRegister:" destination="5eO-MK-aaX" eventType="touchUpInside" id="a13-NG-ntZ"/>
+                                    <segue destination="sDl-1g-Omp" kind="presentation" identifier="registerSegue" id="HoJ-2O-EoT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8E-Ss-uoq">
@@ -151,6 +152,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P7z-eb-4Cf"/>
+                    <connections>
+                        <outlet property="passwordField" destination="aaB-jG-Aj2" id="jei-Kr-lls"/>
+                        <outlet property="usernameField" destination="lVO-G2-qV3" id="N6D-w3-9Yr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="547-94-SkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,7 +164,7 @@
         <!--LoginScreen-->
         <scene sceneID="Pc5-gQ-lo0">
             <objects>
-                <viewController title="LoginScreen" modalPresentationStyle="fullScreen" id="5Xb-QK-Nhn" sceneMemberID="viewController">
+                <viewController title="LoginScreen" modalPresentationStyle="fullScreen" id="5Xb-QK-Nhn" customClass="LoginViewController" customModule="breathe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tdi-jz-fbg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,7 +195,8 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="sDl-1g-Omp" kind="presentation" id="zYZ-Tg-aB0"/>
+                                    <action selector="onLogIn:" destination="5Xb-QK-Nhn" eventType="touchUpInside" id="FDG-AK-BJu"/>
+                                    <segue destination="sDl-1g-Omp" kind="presentation" identifier="loginSegue" id="zYZ-Tg-aB0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-j1-U9U">
@@ -219,6 +225,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xmN-Af-sOQ"/>
+                    <connections>
+                        <outlet property="passwordField" destination="7I8-km-aJP" id="T9L-zG-F73"/>
+                        <outlet property="usernameField" destination="y99-D5-8nR" id="RDf-7F-Hfs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3J-kr-sES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -504,7 +514,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zYZ-Tg-aB0"/>
+        <segue reference="HoJ-2O-EoT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
