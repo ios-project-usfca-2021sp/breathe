@@ -61,7 +61,7 @@ class EditViewController: UIViewController {
         let task = PFObject(className: "Tasks")
         
         task["brief"] = briefField.text!
-        task["detail"] = briefField.text!
+        task["detail"] = detailField.text!
 //        task["user"] = PFUser.current()!
         
         task.saveInBackground {(success, error) in
