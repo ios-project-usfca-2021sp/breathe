@@ -261,7 +261,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="164" id="DD0-I8-UWs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellTableViewCell" rowHeight="164" id="DD0-I8-UWs" customClass="ToDoCellTableViewCell" customModule="breathe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="164"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DD0-I8-UWs" id="gkC-7z-f7R">
@@ -289,6 +289,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkButton" destination="Rnh-fj-T06" id="vtl-or-xF8"/>
+                                    <outlet property="taskDescription" destination="IqB-Tp-hbW" id="Ej5-dM-MtW"/>
+                                    <outlet property="taskTitle" destination="b1d-vI-pBD" id="0G7-hf-k7w"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -514,7 +519,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HoJ-2O-EoT"/>
+        <segue reference="zYZ-Tg-aB0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
