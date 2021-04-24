@@ -456,10 +456,10 @@
             </objects>
             <point key="canvasLocation" x="2964" y="-449"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="lSC-7k-K74">
             <objects>
-                <viewController id="eL1-8I-EML" sceneMemberID="viewController">
+                <viewController id="eL1-8I-EML" customClass="EditViewController" customModule="breathe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmm-k2-bok">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -497,10 +497,13 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-uK-njv">
-                                <rect key="frame" x="378" y="46" width="23" height="20"/>
+                                <rect key="frame" x="378" y="46" width="22.5" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="note.text.badge.plus" catalog="system"/>
+                                <connections>
+                                    <action selector="onAddTask:" destination="eL1-8I-EML" eventType="touchUpInside" id="hCX-yK-sJJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouw-7k-uaS">
                                 <rect key="frame" x="378" y="523.5" width="22.5" height="19"/>
@@ -530,6 +533,10 @@
                             <constraint firstItem="cVb-Gd-Z2R" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="zNh-AB-fEL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="briefField" destination="bir-nl-xR6" id="VDE-Qb-rxO"/>
+                        <outlet property="detailField" destination="Mx0-IW-Z0Y" id="uU1-dz-Dt1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRX-F7-SNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
