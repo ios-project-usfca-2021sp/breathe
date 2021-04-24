@@ -23,14 +23,16 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 
 **Required Must-have Stories**
 
+- Database can store user information:
+   - [x] Have the parse backend setup with user and todo task table.
 - User see app icon in home screen with a styled launch screen.
    - [ ] front end - user can see an app icon and lauch screen.
 - User can log in.
    - [x] front end - user can see a login screen.
-   - [ ] back end - user can login via login screen.
+   - [ ] back end - user can login via login screen. (started)
 - User can register.
    - [x] front end - user can see a register screen.
-   - [ ] back end - user can create new account via register screen.
+   - [ ] back end - user can create new account via register screen. (started)
 - User can log out.
    - [ ] front end - user can see a logout button.
    - [ ] back end - user can logout via logout button.
@@ -39,13 +41,14 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
    - [ ] back end - user can view all added tasks, and check off task on the todo task screen.
 - User can add a task.
    - [x] front end - user can see an editing task popover.
-   - [ ] back end - user can add task and alarm on this popover.
+   - [x] back end - user can add task on this popover.
+   - [x] back end - user can set an alarm which will have a notification.
 - User can delete a task.
    - [x] front end - user can see a check box on todo task screen.
    - [ ] back end - user can delete task and disable alarm via check box.
 - User can see a motivational section with with healthy quotes/tips.
    - [x] front end - user can see a motivational screen.
-   - [ ] back end - user can get random selected motiviational quote and health tips.
+   - [ ] back end - user can get random selected motiviational quote and health tips. (started)
 - User can see a new quote when the button is pressed.   
    - [ ] front end - user can see a refresh button.
    - [ ] back end - user can get new quotes when pressing button.
