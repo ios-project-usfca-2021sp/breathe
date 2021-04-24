@@ -19,6 +19,7 @@
 		992005C22622481F00709B04 /* breatheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005C12622481F00709B04 /* breatheUITests.swift */; };
 		9CB4F878263380130089ED2B /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4F877263380130089ED2B /* ToDoTableViewController.swift */; };
 		9CB4F87D2633847D0089ED2B /* ToDoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4F87C2633847D0089ED2B /* ToDoCellTableViewCell.swift */; };
+		9937D36B2631F21500BA4660 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937D36A2631F21500BA4660 /* EditViewController.swift */; };
 		A322EA982630DE9400EC3E15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A322EA972630DE9400EC3E15 /* LoginViewController.swift */; };
 		A322EA9D2630DEE400EC3E15 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A322EA9C2630DEE400EC3E15 /* RegisterViewController.swift */; };
 		DA19A9B0114106BB585BAA3A /* Pods_breathe_breatheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EF7488D6387CBE4BDBD3E8 /* Pods_breathe_breatheUITests.framework */; };
@@ -64,8 +65,7 @@
 		992005BD2622481F00709B04 /* breatheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = breatheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		992005C12622481F00709B04 /* breatheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breatheUITests.swift; sourceTree = "<group>"; };
 		992005C32622481F00709B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CB4F877263380130089ED2B /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
-		9CB4F87C2633847D0089ED2B /* ToDoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCellTableViewCell.swift; sourceTree = "<group>"; };
+		9937D36A2631F21500BA4660 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		A322EA972630DE9400EC3E15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A322EA9C2630DEE400EC3E15 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CA76C1CD69A6051C7688CA98 /* Pods_breathe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breathe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,8 +136,7 @@
 				992005AD2622481F00709B04 /* Info.plist */,
 				A322EA972630DE9400EC3E15 /* LoginViewController.swift */,
 				A322EA9C2630DEE400EC3E15 /* RegisterViewController.swift */,
-				9CB4F877263380130089ED2B /* ToDoTableViewController.swift */,
-				9CB4F87C2633847D0089ED2B /* ToDoCellTableViewCell.swift */,
+				9937D36A2631F21500BA4660 /* EditViewController.swift */,
 			);
 			path = breathe;
 			sourceTree = "<group>";
@@ -428,7 +427,7 @@
 				A322EA9D2630DEE400EC3E15 /* RegisterViewController.swift in Sources */,
 				A322EA982630DE9400EC3E15 /* LoginViewController.swift in Sources */,
 				992005A22622481D00709B04 /* SceneDelegate.swift in Sources */,
-				9CB4F87D2633847D0089ED2B /* ToDoCellTableViewCell.swift in Sources */,
+				9937D36B2631F21500BA4660 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

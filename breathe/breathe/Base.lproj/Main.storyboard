@@ -456,16 +456,16 @@
             </objects>
             <point key="canvasLocation" x="2964" y="-449"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="lSC-7k-K74">
             <objects>
-                <viewController id="eL1-8I-EML" sceneMemberID="viewController">
+                <viewController id="eL1-8I-EML" customClass="EditViewController" customModule="breathe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmm-k2-bok">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-Gd-Z2R">
-                                <rect key="frame" x="15" y="562" width="384" height="216"/>
+                                <rect key="frame" x="15" y="562" width="320" height="216"/>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add brief ... " translatesAutoresizingMaskIntoConstraints="NO" id="bir-nl-xR6">
                                 <rect key="frame" x="15" y="30" width="384" height="32"/>
@@ -480,12 +480,15 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Editing details ..." translatesAutoresizingMaskIntoConstraints="NO" id="Mx0-IW-Z0Y">
                                 <rect key="frame" x="15" y="82" width="384" height="410"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="410" id="oZ9-ca-XnJ"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRj-jD-a5u">
-                                <rect key="frame" x="15" y="512" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRj-jD-a5u">
+                                <rect key="frame" x="15" y="512" width="384" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="set an alarm">
@@ -493,29 +496,54 @@
                                     <imageReference key="image" image="alarm" catalog="system" symbolScale="default"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-uK-njv">
+                                <rect key="frame" x="379" y="45" width="21" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="plus.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="onAddTask:" destination="eL1-8I-EML" eventType="touchUpInside" id="hCX-yK-sJJ"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fmr-ad-lBW">
+                                <rect key="frame" x="350" y="562" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitch:" destination="eL1-8I-EML" eventType="valueChanged" id="pVC-Ti-Ely"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P1z-au-9vo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="19g-RP-GGi"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="cVb-Gd-Z2R" secondAttribute="trailing" constant="15" id="1v1-fz-Gqg"/>
-                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="top" secondItem="bir-nl-xR6" secondAttribute="bottom" constant="20" id="7jI-3Y-VUP"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="Mx0-IW-Z0Y" secondAttribute="trailing" constant="15" id="9nU-38-PgO"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="bottom" secondItem="cVb-Gd-Z2R" secondAttribute="bottom" constant="30" id="AsK-7p-m5v"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IRj-jD-a5u" secondAttribute="trailing" symbolic="YES" id="CZd-qL-Ofz"/>
-                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="bir-nl-xR6" secondAttribute="trailing" constant="15" id="YpX-Wf-DMd"/>
-                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="dIA-iO-5BU"/>
-                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="gZ4-XS-bNj"/>
-                            <constraint firstItem="bir-nl-xR6" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="jTC-k6-41c"/>
-                            <constraint firstItem="IRj-jD-a5u" firstAttribute="top" secondItem="Mx0-IW-Z0Y" secondAttribute="bottom" constant="20" id="lX0-vH-WdW"/>
-                            <constraint firstItem="bir-nl-xR6" firstAttribute="top" secondItem="P1z-au-9vo" secondAttribute="top" constant="30" id="ljJ-mE-y7V"/>
-                            <constraint firstItem="IRj-jD-a5u" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="z8D-U8-Caj"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Fmr-ad-lBW" secondAttribute="bottom" constant="20" id="0Vf-Zs-FCJ"/>
+                            <constraint firstItem="IRj-jD-a5u" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="1Js-gN-mrW"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="Mx0-IW-Z0Y" secondAttribute="trailing" constant="15" id="6wW-f8-7Me"/>
+                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="top" secondItem="bir-nl-xR6" secondAttribute="bottom" constant="20" id="8d5-nd-hO0"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="V3w-uK-njv" secondAttribute="trailing" constant="14" id="9Bg-Xd-jm9"/>
+                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="A10-DE-re1"/>
+                            <constraint firstItem="Fmr-ad-lBW" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="GgY-mf-Cw3"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="Fmr-ad-lBW" secondAttribute="trailing" constant="15" id="M7Z-Nl-593"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="bir-nl-xR6" secondAttribute="trailing" constant="15" id="RLh-RJ-Km1"/>
+                            <constraint firstItem="bir-nl-xR6" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="WPS-RY-VXF"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="bottom" secondItem="cVb-Gd-Z2R" secondAttribute="bottom" constant="30" id="WTw-WN-PAH"/>
+                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="leading" secondItem="P1z-au-9vo" secondAttribute="leading" constant="15" id="YFL-Ye-QpF"/>
+                            <constraint firstItem="P1z-au-9vo" firstAttribute="trailing" secondItem="IRj-jD-a5u" secondAttribute="trailing" constant="15" id="aMm-UJ-Pgt"/>
+                            <constraint firstItem="Mx0-IW-Z0Y" firstAttribute="top" secondItem="V3w-uK-njv" secondAttribute="bottom" constant="17" id="d2I-SI-1Vt"/>
+                            <constraint firstItem="bir-nl-xR6" firstAttribute="top" secondItem="P1z-au-9vo" secondAttribute="top" constant="30" id="dDJ-6n-YWo"/>
+                            <constraint firstItem="V3w-uK-njv" firstAttribute="top" secondItem="P1z-au-9vo" secondAttribute="top" constant="44.5" id="rEM-Fd-1Lq"/>
+                            <constraint firstItem="cVb-Gd-Z2R" firstAttribute="top" secondItem="IRj-jD-a5u" secondAttribute="bottom" constant="20" id="zNh-AB-fEL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alarmSwitch" destination="Fmr-ad-lBW" id="iuB-j4-wg9"/>
+                        <outlet property="briefField" destination="bir-nl-xR6" id="VDE-Qb-rxO"/>
+                        <outlet property="datePicker" destination="cVb-Gd-Z2R" id="fFw-on-Bdv"/>
+                        <outlet property="detailField" destination="Mx0-IW-Z0Y" id="h8u-oL-t8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRX-F7-SNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4704" y="260"/>
+            <point key="canvasLocation" x="4702.898550724638" y="259.82142857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -523,6 +551,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="uncheckedbo" width="225" height="225"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
