@@ -341,35 +341,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Daily Motivation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-x2-e7f">
-                                <rect key="frame" x="52" y="122" width="203" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Motivation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-x2-e7f">
+                                <rect key="frame" x="52" y="166" width="172.5" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="3vV-es-YuV"/>
                                     <constraint firstAttribute="height" constant="65" id="nbd-mh-YNq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Healthy Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEH-bl-tJe">
-                                <rect key="frame" x="52" y="379" width="169" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="h3f-3W-VD1"/>
-                                    <constraint firstAttribute="height" constant="65" id="nNJ-pa-5q3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HealthyLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URQ-xM-5af">
-                                <rect key="frame" x="20" y="452" width="364" height="191"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HealthyLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URQ-xM-5af">
+                                <rect key="frame" x="10" y="624.5" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MotivationLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Q-mw-Vga">
-                                <rect key="frame" x="52" y="195" width="332" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MotivationLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Q-mw-Vga">
+                                <rect key="frame" x="10" y="241" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -394,16 +382,30 @@
                                     <action selector="HealthyButton:" destination="ciB-fO-s27" eventType="touchUpInside" id="yv3-2k-Nh9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEH-bl-tJe">
+                                <rect key="frame" x="52" y="487" width="134.5" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="nNJ-pa-5q3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ixe-Y9-VWw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ixe-Y9-VWw" firstAttribute="trailing" secondItem="X0Q-mw-Vga" secondAttribute="trailing" constant="10" id="0SY-Dk-sl2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URQ-xM-5af" secondAttribute="trailing" constant="10" id="3i5-Qu-Aik"/>
                             <constraint firstAttribute="bottomMargin" secondItem="URQ-xM-5af" secondAttribute="bottom" constant="168" id="5bF-bw-HDg"/>
-                            <constraint firstItem="URQ-xM-5af" firstAttribute="top" secondItem="iEH-bl-tJe" secondAttribute="bottom" constant="8" symbolic="YES" id="TpU-0W-awh"/>
+                            <constraint firstItem="X0Q-mw-Vga" firstAttribute="top" secondItem="LLm-x2-e7f" secondAttribute="bottom" constant="10" id="9P4-gq-r4s"/>
+                            <constraint firstItem="URQ-xM-5af" firstAttribute="leading" secondItem="ixe-Y9-VWw" secondAttribute="leading" constant="10" id="Jzw-G4-8zt"/>
                             <constraint firstItem="LLm-x2-e7f" firstAttribute="leading" secondItem="hxc-o4-x2R" secondAttribute="leadingMargin" constant="32" id="Z4u-hn-qNU"/>
                             <constraint firstItem="iEH-bl-tJe" firstAttribute="leading" secondItem="hxc-o4-x2R" secondAttribute="leadingMargin" constant="32" id="a5p-0o-PED"/>
                             <constraint firstItem="LLm-x2-e7f" firstAttribute="top" secondItem="hxc-o4-x2R" secondAttribute="topMargin" constant="78" id="enF-Dt-wd4"/>
+                            <constraint firstItem="X0Q-mw-Vga" firstAttribute="leading" secondItem="ixe-Y9-VWw" secondAttribute="leading" constant="10" id="iNH-Yi-KW2"/>
+                            <constraint firstItem="URQ-xM-5af" firstAttribute="top" secondItem="iEH-bl-tJe" secondAttribute="bottom" constant="72.5" id="jr8-Ev-Ola"/>
+                            <constraint firstItem="ixe-Y9-VWw" firstAttribute="trailing" secondItem="URQ-xM-5af" secondAttribute="trailing" constant="10" id="p8D-Uh-3VS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="96b-ng-6br"/>
