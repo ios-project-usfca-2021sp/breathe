@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "079DC3F5-54DE-4A57-A885-CBC6D27E88E3"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "breathe/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 497b9c0561bd417b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "breathe.LoginViewController.usernameField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "breathe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 9008985e8ac39d67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "breathe.LoginViewController.usernameField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "breathe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 9506cc2284fde407"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "breathe.LoginViewController.usernameField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "breathe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 7a730720955d17cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "breathe.LoginViewController.usernameField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "breathe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - cfb472a21cb8606a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "breathe.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; breathe.LoginViewController"
+                  moduleName = "breathe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 16263150b4f59780"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "breathe.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;breathe.LoginViewController&gt;"
+                  moduleName = "breathe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
