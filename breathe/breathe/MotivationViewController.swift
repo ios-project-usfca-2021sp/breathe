@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MotivationViewController: UITableViewController {
+class MotivationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,21 +29,21 @@ class MotivationViewController: UITableViewController {
     
     //when button is clicked counter increments
     //and healthyLabel is updated
-    var buttonWasBressed = false
+    var count : Int = 0
     @IBAction func HealthyButton(_ sender: Any) {
-        var count : Int = 0
-        if buttonWasBressed == false {
-            //do nnothing
-        }else{
-            let array_new = ["!) Sleep Enough, 2)Eat Breakfast, and Lunch, and Dinner, 3) Raise Your Heart Rate,", "Every Day", "1)Sweat (and Stretch) Twice a Week, 2)Wash Your Hands, 3)Stay Hydrated"]
-            count = count + 1
-            HealthyLabel.text = array_new[count]
+        print(count)
+        let array_new = ["!) Sleep Enough, 2)Eat Breakfast, and Lunch, and Dinner, 3) Raise Your Heart Rate Every Day", "1)Sweat (and Stretch) Twice a Week, 2)Wash Your Hands, 3)Stay Hydrated"]
+        HealthyLabel.text = array_new[count]
+            print(array_new[count])
+        count = count + 1
+        
+        
+        if count == array_new.count {
+            count = 0
             
-            if count == array_new.count {
-                count = 0
-                HealthyLabel.text = array_new[count]
-            }
         }
+        
+        
         
     }
     
