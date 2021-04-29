@@ -60,9 +60,14 @@ class EditViewController: UIViewController {
     @IBAction func onAddTask(_ sender: Any) {
         let task = PFObject(className: "Tasks")
         
+        if briefField.text == "" {
+            print("please type valid thing")
+            return
+        }
+        
         task["brief"] = briefField.text!
         task["detail"] = detailField.text!
-        task["user"] = PFUser.current()!
+//        task["user"] = PFUser.current()!
         
         task.saveInBackground {(success, error) in
             if success {
