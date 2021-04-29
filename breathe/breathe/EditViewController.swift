@@ -61,20 +61,24 @@ class EditViewController: UIViewController {
         let task = PFObject(className: "Tasks")
         
         if briefField.text == "" {
-            print("please type valid thing")
+            let alert = UIAlertController(title: "Invalid Task Title", message: "Please input the task title.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         task["brief"] = briefField.text!
         task["detail"] = detailField.text!
-//        task["user"] = PFUser.current()!
+        task["user"] = PFUser.current()!
         
         task.saveInBackground {(success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
                 print("task added")
             } else {
-                print("error")
+                let alert = UIAlertController(title: "Error adding task", message: "Please try again later.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     
