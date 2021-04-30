@@ -48,10 +48,10 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
    - [ ] back end - user can delete task and disable alarm via check box.
 - User can see a motivational section with with healthy quotes/tips.
    - [x] front end - user can see a motivational screen.
-   - [ ] back end - user can get random selected motiviational quote and health tips. (started)
+   - [x] back end - user can get random selected motiviational quote and health tips. (started)
 - User can see a new quote when the button is pressed.   
    - [ ] front end - user can see a refresh button.
-   - [ ] back end - user can get new quotes when pressing button.
+   - [x] back end - user can get new quotes when pressing button.
 
 **Optional Nice-to-have Stories**
 
