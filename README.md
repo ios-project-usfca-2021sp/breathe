@@ -38,7 +38,7 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
    - [ ] back end - user can logout via logout button.
 - User can see a list of tasks on the main screen.
    - [x] front end - user can see a todo task screen.
-   - [ ] back end - user can view all added tasks, and check off task on the todo task screen.
+   - [x] back end - user can view all added tasks, and check off task on the todo task screen.
 - User can add a task.
    - [x] front end - user can see an editing task popover.
    - [x] back end - user can add task on this popover.
