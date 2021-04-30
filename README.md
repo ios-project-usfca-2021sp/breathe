@@ -42,7 +42,8 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 - User can add a task.
    - [x] front end - user can see an editing task popover.
    - [x] back end - user can add task on this popover.
-   - [x] back end - user can set an alarm which will have a notification.
+   - [x] back end error handling - user can see an error showing up when the task does not have title.
+   - [ ] back end - user can set an alarm which will have a notification.
 - User can delete a task.
    - [x] front end - user can see a check box on todo task screen.
    - [ ] back end - user can delete task and disable alarm via check box.
