@@ -2,15 +2,26 @@
 //  ToDoTableViewController.swift
 //  breathe
 //
-//  Created by Anoushka Erram on 4/23/21.
+//  Created by Anoushka Erram on 4/29/21.
 //
 
 import UIKit
 
 class ToDoTableViewController: UITableViewController {
 
+    var todoArray = [NSDictionary]()
+    var numOfTask: Int!
+    
+    let myRefreshControl = UIRefreshControl()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myRefreshControl.addTarget(self, action: #selector(loadTasks), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 150
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,6 +35,17 @@ class ToDoTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
+    }
+    
+    @objc func loadTasks(){
+        numOfTask = 20
+        
+        let myParam = ["count": numOfTask]
+        let check = PFObject(className: "Tasks")
+        
+        task["brief"] = taskTitle.text!
+        task["detail"] = taskDescrip.text!
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
