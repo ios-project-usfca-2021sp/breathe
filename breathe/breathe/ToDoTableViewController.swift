@@ -31,27 +31,27 @@ class ToDoTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-    
-    @objc func loadTasks(){
-        numOfTask = 20
-        
-        let myParam = ["count": numOfTask]
-        let check = PFObject(className: "Tasks")
-        
-        task["brief"] = taskTitle.text!
-        task["detail"] = taskDescrip.text!
-        
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//    
+//    @objc func loadTasks(){
+//        numOfTask = 20
+//
+//        let myParam = ["count": numOfTask]
+//        let check = PFObject(className: "Tasks")
+//
+//        task["brief"] = taskTitle.text!
+//        task["detail"] = taskDescrip.text!
+//
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
