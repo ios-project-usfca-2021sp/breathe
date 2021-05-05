@@ -32,7 +32,8 @@ class MotivationViewController: UIViewController {
     var count : Int = 0
     @IBAction func HealthyButton(_ sender: Any) {
         print(count)
-        let array_new = ["!) Sleep Enough, 2)Eat Breakfast, and Lunch, and Dinner, 3) Raise Your Heart Rate Every Day", "1)Sweat (and Stretch) Twice a Week, 2)Wash Your Hands, 3)Stay Hydrated"]
+        let array_new = ["!) Sleep Enough, 2)Eat Breakfast, and Lunch, and Dinner, 3) Raise Your Heart Rate Every Day", "1)Sweat (and Stretch) Twice a Week, 2)Wash Your Hands, 3)Stay Hydrated "]
+        
         HealthyLabel.text = array_new[count]
             print(array_new[count])
         count = count + 1
