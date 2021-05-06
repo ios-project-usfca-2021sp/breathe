@@ -8,6 +8,7 @@ target 'breathe' do
   # Pods for breathe
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'lottie-ios'
 
   target 'breatheTests' do
     inherit! :search_paths
