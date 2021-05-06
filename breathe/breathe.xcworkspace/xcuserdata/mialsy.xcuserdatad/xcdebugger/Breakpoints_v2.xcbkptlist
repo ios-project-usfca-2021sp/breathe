@@ -14,47 +14,47 @@
             filePath = "breathe/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "LoginViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 497b9c0561bd417b"
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 992c414dbffb204f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "breathe.LoginViewController.usernameField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  symbolName = "breathe.LoginViewController.passwordField.getter : Swift.Optional&lt;__C.UITextField&gt;"
                   moduleName = "breathe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 9008985e8ac39d67"
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 203d5e89c0097c7b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "breathe.LoginViewController.usernameField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  symbolName = "breathe.LoginViewController.passwordField.setter : Swift.Optional&lt;__C.UITextField&gt;"
                   moduleName = "breathe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "155">
                </Location>
                <Location
-                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 9506cc2284fde407"
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 253bb16dd23b4718"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "breathe.LoginViewController.usernameField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  symbolName = "breathe.LoginViewController.passwordField.modify : Swift.Optional&lt;__C.UITextField&gt;"
                   moduleName = "breathe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
@@ -65,22 +65,22 @@
                   offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 7a730720955d17cf"
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 180b9e8cab326ce6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "breathe.LoginViewController.usernameField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  symbolName = "breathe.LoginViewController.passwordField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "breathe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "36">
                </Location>
                <Location
-                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - cfb472a21cb8606a"
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - cfb472a21cb8604b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -90,12 +90,12 @@
                   urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "161">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "218">
                </Location>
                <Location
-                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 16263150b4f59780"
+                  uuid = "F5F73CE3-44D2-47C3-8D2A-577395EE4C98 - 16263150b4f597a1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -105,9 +105,9 @@
                   urlString = "file:///Users/mialsy/Desktop/iOS_course/breathe/breathe/breathe/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "117">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "174">
                </Location>
             </Locations>
          </BreakpointContent>
