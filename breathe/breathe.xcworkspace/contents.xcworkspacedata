@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Dup.swift">
+   </FileRef>
+   <FileRef
       location = "group:breathe.xcodeproj">
    </FileRef>
    <FileRef
