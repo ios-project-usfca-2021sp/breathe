@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRegisterViewController" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,11 +326,11 @@
             </objects>
             <point key="canvasLocation" x="3729" y="260"/>
         </scene>
-        <!--Item-->
+        <!--Tasks-->
         <scene sceneID="idL-z3-EMD">
             <objects>
                 <navigationController id="co8-Yj-N2t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ve5-tk-fog"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" selectedImage="list.bullet" catalog="system" id="Ve5-tk-fog"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bmv-NB-g0P">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -422,7 +422,13 @@
                             <constraint firstItem="ixe-Y9-VWw" firstAttribute="trailing" secondItem="URQ-xM-5af" secondAttribute="trailing" constant="10" id="p8D-Uh-3VS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="96b-ng-6br"/>
+                    <navigationItem key="navigationItem" id="96b-ng-6br">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Sae-oo-bGv">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="ciB-fO-s27" id="UkO-gn-rL9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="HealthyLabel" destination="URQ-xM-5af" id="Qgr-s5-81z"/>
                         <outlet property="MotivationLabel" destination="X0Q-mw-Vga" id="CWp-pB-xuS"/>
@@ -432,11 +438,11 @@
             </objects>
             <point key="canvasLocation" x="3976.811594202899" y="-449.33035714285711"/>
         </scene>
-        <!--Item-->
+        <!--Health-->
         <scene sceneID="yzc-iH-0Gl">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="SoX-AF-QUM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="se5-gQ-1ob"/>
+                <navigationController storyboardIdentifier="FeedNavigationController" modalPresentationStyle="fullScreen" id="SoX-AF-QUM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Health" selectedImage="circle.grid.hex.fill" catalog="system" id="se5-gQ-1ob"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PEv-SU-Q0T">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -545,6 +551,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
+        <image name="circle.grid.hex.fill" catalog="system" width="128" height="112"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="uncheckedbo" width="225" height="225"/>
         <systemColor name="labelColor">
