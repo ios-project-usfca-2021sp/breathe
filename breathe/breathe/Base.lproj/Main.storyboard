@@ -271,27 +271,44 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1d-vI-pBD">
-                                            <rect key="frame" x="71" y="11" width="119" height="39"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1d-vI-pBD">
+                                            <rect key="frame" x="70" y="11" width="91.5" height="46"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnh-fj-T06">
-                                            <rect key="frame" x="0.0" y="53" width="50" height="46"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnh-fj-T06">
+                                            <rect key="frame" x="0.0" y="50" width="60" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="Htw-ZA-fl3"/>
+                                                <constraint firstAttribute="width" constant="60" id="kJA-qs-wQz"/>
+                                            </constraints>
                                             <state key="normal" title="Button" image="uncheckedbo"/>
+                                            <connections>
+                                                <action selector="checkBox:" destination="DD0-I8-UWs" eventType="touchUpInside" id="o1l-OD-CDX"/>
+                                            </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqB-Tp-hbW">
-                                            <rect key="frame" x="71" y="66" width="343" height="87"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqB-Tp-hbW">
+                                            <rect key="frame" x="110" y="77" width="304" height="87"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="87" id="Oj0-0o-cQS"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.84093397855758667" green="0.68830037117004395" blue="0.69348627328872681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="b1d-vI-pBD" firstAttribute="top" secondItem="gkC-7z-f7R" secondAttribute="topMargin" id="BZt-uK-sCX"/>
+                                        <constraint firstItem="IqB-Tp-hbW" firstAttribute="leading" secondItem="Rnh-fj-T06" secondAttribute="trailing" constant="50" id="Cma-jV-kka"/>
+                                        <constraint firstItem="b1d-vI-pBD" firstAttribute="leading" secondItem="gkC-7z-f7R" secondAttribute="leadingMargin" constant="50" id="Ldz-RL-qLv"/>
+                                        <constraint firstAttribute="bottom" secondItem="IqB-Tp-hbW" secondAttribute="bottom" id="Phg-Va-TIZ"/>
+                                        <constraint firstItem="Rnh-fj-T06" firstAttribute="leading" secondItem="gkC-7z-f7R" secondAttribute="leading" id="Prk-hg-iPT"/>
+                                        <constraint firstItem="Rnh-fj-T06" firstAttribute="top" secondItem="gkC-7z-f7R" secondAttribute="top" constant="50" id="Ytx-kc-raX"/>
+                                        <constraint firstItem="IqB-Tp-hbW" firstAttribute="top" secondItem="b1d-vI-pBD" secondAttribute="bottom" constant="20" id="ggR-Fj-dBQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="IqB-Tp-hbW" secondAttribute="trailing" id="vXs-lK-56r"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="checkButton" destination="Rnh-fj-T06" id="87L-6A-bFN"/>
