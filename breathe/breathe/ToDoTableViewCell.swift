@@ -21,15 +21,28 @@ class ToDoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var taskDesc: UILabel!
 
-   
+    @IBAction func checkBox(_ sender: Any) {
+        let checkMarked = !checked
+        if(checkMarked){
+            self.setChecked(true)
+        }
+        else{
+            self.setChecked(false)
+        }
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    var checked:Bool = false
+    var taskId:Int = -1
+    
     func setChecked(_ isChecked: Bool){
-        let check = isChecked
-        if(check){
+        checked = isChecked
+        if(checked){
             checkButton.setImage(UIImage(named: "checkedbox"), for: UIControl.State.normal)
         }
         else{
