@@ -547,9 +547,23 @@
             </objects>
             <point key="canvasLocation" x="4702.898550724638" y="259.82142857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="p1J-Mq-f5w">
+            <objects>
+                <viewController id="VSY-q9-paL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SmO-cy-Gjg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPO-gN-TIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5243" y="144"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zYZ-Tg-aB0"/>
+        <segue reference="HoJ-2O-EoT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>

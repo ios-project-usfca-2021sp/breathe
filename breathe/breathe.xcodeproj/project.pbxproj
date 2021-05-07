@@ -18,6 +18,7 @@
 		992005B72622481F00709B04 /* breatheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005B62622481F00709B04 /* breatheTests.swift */; };
 		992005C22622481F00709B04 /* breatheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005C12622481F00709B04 /* breatheUITests.swift */; };
 		9937D36B2631F21500BA4660 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937D36A2631F21500BA4660 /* EditViewController.swift */; };
+		99FD271A2643C2DF004787AB /* 35593-goal-completed.json in Resources */ = {isa = PBXBuildFile; fileRef = 99FD27192643C2DF004787AB /* 35593-goal-completed.json */; };
 		9CB4F878263380130089ED2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		9CB4F88D263B317D0089ED2B /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4F88C263B317D0089ED2B /* ToDoTableViewCell.swift */; };
 		9CB4F89A263B371A0089ED2B /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4F899263B371A0089ED2B /* ToDoTableViewController.swift */; };
@@ -67,6 +68,7 @@
 		992005C12622481F00709B04 /* breatheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breatheUITests.swift; sourceTree = "<group>"; };
 		992005C32622481F00709B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9937D36A2631F21500BA4660 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		99FD27192643C2DF004787AB /* 35593-goal-completed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "35593-goal-completed.json"; sourceTree = "<group>"; };
 		9CB4F88C263B317D0089ED2B /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		9CB4F899263B371A0089ED2B /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		A322EA972630DE9400EC3E15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -130,11 +132,11 @@
 		9920059E2622481D00709B04 /* breathe */ = {
 			isa = PBXGroup;
 			children = (
+				99FD27122643A990004787AB /* Assets */,
 				9920059F2622481D00709B04 /* AppDelegate.swift */,
 				992005A12622481D00709B04 /* SceneDelegate.swift */,
 				992005A52622481D00709B04 /* Main.storyboard */,
 				47FC919A262E50DF0092E478 /* MotivationViewController.swift */,
-				992005A82622481F00709B04 /* Assets.xcassets */,
 				992005AA2622481F00709B04 /* LaunchScreen.storyboard */,
 				992005AD2622481F00709B04 /* Info.plist */,
 				A322EA972630DE9400EC3E15 /* LoginViewController.swift */,
@@ -162,6 +164,15 @@
 				992005C32622481F00709B04 /* Info.plist */,
 			);
 			path = breatheUITests;
+			sourceTree = "<group>";
+		};
+		99FD27122643A990004787AB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				992005A82622481F00709B04 /* Assets.xcassets */,
+				99FD27192643C2DF004787AB /* 35593-goal-completed.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		BA34580C3EED3427FF303B0E /* Pods */ = {
@@ -295,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FD271A2643C2DF004787AB /* 35593-goal-completed.json in Resources */,
 				992005AC2622481F00709B04 /* LaunchScreen.storyboard in Resources */,
 				992005A92622481F00709B04 /* Assets.xcassets in Resources */,
 				992005A72622481D00709B04 /* Main.storyboard in Resources */,
