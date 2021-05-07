@@ -10,7 +10,6 @@
 		47FC919B262E50DF0092E478 /* MotivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC919A262E50DF0092E478 /* MotivationViewController.swift */; };
 		47FC91A0262E93590092E478 /* MotivationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC919F262E93580092E478 /* MotivationCell.swift */; };
 		63DBA7831DB429EDA01655EA /* Pods_breatheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B5C69E4E744E6758CD04A /* Pods_breatheTests.framework */; };
-		990EDE282644A1F0007F0198 /* UIAlertControllerCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990EDE272644A1F0007F0198 /* UIAlertControllerCustomization.swift */; };
 		991500C82644B62B00E4C615 /* 28436-fc-error-rays.json in Resources */ = {isa = PBXBuildFile; fileRef = 991500C52644B62B00E4C615 /* 28436-fc-error-rays.json */; };
 		991500C92644B62B00E4C615 /* 59674-erro-exchange.json in Resources */ = {isa = PBXBuildFile; fileRef = 991500C62644B62B00E4C615 /* 59674-erro-exchange.json */; };
 		991500CA2644B62B00E4C615 /* 14651-error-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 991500C72644B62B00E4C615 /* 14651-error-animation.json */; };
@@ -58,7 +57,6 @@
 		51270842D9BC2413115C28BA /* Pods-breatheTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breatheTests.debug.xcconfig"; path = "Target Support Files/Pods-breatheTests/Pods-breatheTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54EF7488D6387CBE4BDBD3E8 /* Pods_breathe_breatheUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breathe_breatheUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231106670EB51B03641A25B /* Pods-breatheTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breatheTests.release.xcconfig"; path = "Target Support Files/Pods-breatheTests/Pods-breatheTests.release.xcconfig"; sourceTree = "<group>"; };
-		990EDE272644A1F0007F0198 /* UIAlertControllerCustomization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerCustomization.swift; sourceTree = "<group>"; };
 		991500C52644B62B00E4C615 /* 28436-fc-error-rays.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "28436-fc-error-rays.json"; sourceTree = "<group>"; };
 		991500C62644B62B00E4C615 /* 59674-erro-exchange.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "59674-erro-exchange.json"; sourceTree = "<group>"; };
 		991500C72644B62B00E4C615 /* 14651-error-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "14651-error-animation.json"; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				9937D36A2631F21500BA4660 /* EditViewController.swift */,
 				9CB4F88C263B317D0089ED2B /* ToDoTableViewCell.swift */,
 				9CB4F899263B371A0089ED2B /* ToDoTableViewController.swift */,
-				990EDE272644A1F0007F0198 /* UIAlertControllerCustomization.swift */,
 			);
 			path = breathe;
 			sourceTree = "<group>";
@@ -453,7 +450,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				992005A02622481D00709B04 /* AppDelegate.swift in Sources */,
-				990EDE282644A1F0007F0198 /* UIAlertControllerCustomization.swift in Sources */,
 				47FC919B262E50DF0092E478 /* MotivationViewController.swift in Sources */,
 				9CB4F878263380130089ED2B /* (null) in Sources */,
 				47FC91A0262E93590092E478 /* MotivationCell.swift in Sources */,
