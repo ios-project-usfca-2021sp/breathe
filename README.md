@@ -26,7 +26,7 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 - Database can store user information:
    - [x] Have the parse backend setup with user and todo task table.
 - User see app icon in home screen with a styled launch screen.
-   - [ ] front end - user can see an app icon and lauch screen.
+   - [x] front end - user can see an app icon and lauch screen.
 - User can log in.
    - [x] front end - user can see a login screen.
    - [ ] back end - user can login via login screen. (started)
