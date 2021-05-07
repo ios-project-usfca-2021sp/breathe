@@ -10,6 +10,9 @@
 		47FC919B262E50DF0092E478 /* MotivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC919A262E50DF0092E478 /* MotivationViewController.swift */; };
 		47FC91A0262E93590092E478 /* MotivationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC919F262E93580092E478 /* MotivationCell.swift */; };
 		63DBA7831DB429EDA01655EA /* Pods_breatheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B5C69E4E744E6758CD04A /* Pods_breatheTests.framework */; };
+		991500C82644B62B00E4C615 /* 28436-fc-error-rays.json in Resources */ = {isa = PBXBuildFile; fileRef = 991500C52644B62B00E4C615 /* 28436-fc-error-rays.json */; };
+		991500C92644B62B00E4C615 /* 59674-erro-exchange.json in Resources */ = {isa = PBXBuildFile; fileRef = 991500C62644B62B00E4C615 /* 59674-erro-exchange.json */; };
+		991500CA2644B62B00E4C615 /* 14651-error-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 991500C72644B62B00E4C615 /* 14651-error-animation.json */; };
 		992005A02622481D00709B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920059F2622481D00709B04 /* AppDelegate.swift */; };
 		992005A22622481D00709B04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005A12622481D00709B04 /* SceneDelegate.swift */; };
 		992005A72622481D00709B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992005A52622481D00709B04 /* Main.storyboard */; };
@@ -18,6 +21,7 @@
 		992005B72622481F00709B04 /* breatheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005B62622481F00709B04 /* breatheTests.swift */; };
 		992005C22622481F00709B04 /* breatheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992005C12622481F00709B04 /* breatheUITests.swift */; };
 		9937D36B2631F21500BA4660 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937D36A2631F21500BA4660 /* EditViewController.swift */; };
+		99FD271A2643C2DF004787AB /* 35593-goal-completed.json in Resources */ = {isa = PBXBuildFile; fileRef = 99FD27192643C2DF004787AB /* 35593-goal-completed.json */; };
 		9CB4F878263380130089ED2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		9CB4F88D263B317D0089ED2B /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4F88C263B317D0089ED2B /* ToDoTableViewCell.swift */; };
 		9CB4F89A263B371A0089ED2B /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4F899263B371A0089ED2B /* ToDoTableViewController.swift */; };
@@ -53,6 +57,9 @@
 		51270842D9BC2413115C28BA /* Pods-breatheTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breatheTests.debug.xcconfig"; path = "Target Support Files/Pods-breatheTests/Pods-breatheTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54EF7488D6387CBE4BDBD3E8 /* Pods_breathe_breatheUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breathe_breatheUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231106670EB51B03641A25B /* Pods-breatheTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breatheTests.release.xcconfig"; path = "Target Support Files/Pods-breatheTests/Pods-breatheTests.release.xcconfig"; sourceTree = "<group>"; };
+		991500C52644B62B00E4C615 /* 28436-fc-error-rays.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "28436-fc-error-rays.json"; sourceTree = "<group>"; };
+		991500C62644B62B00E4C615 /* 59674-erro-exchange.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "59674-erro-exchange.json"; sourceTree = "<group>"; };
+		991500C72644B62B00E4C615 /* 14651-error-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "14651-error-animation.json"; sourceTree = "<group>"; };
 		9920059C2622481D00709B04 /* breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breathe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9920059F2622481D00709B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		992005A12622481D00709B04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 		992005C12622481F00709B04 /* breatheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breatheUITests.swift; sourceTree = "<group>"; };
 		992005C32622481F00709B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9937D36A2631F21500BA4660 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		99FD27192643C2DF004787AB /* 35593-goal-completed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "35593-goal-completed.json"; sourceTree = "<group>"; };
 		9CB4F88C263B317D0089ED2B /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		9CB4F899263B371A0089ED2B /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		A322EA972630DE9400EC3E15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -130,11 +138,11 @@
 		9920059E2622481D00709B04 /* breathe */ = {
 			isa = PBXGroup;
 			children = (
+				99FD27122643A990004787AB /* Assets */,
 				9920059F2622481D00709B04 /* AppDelegate.swift */,
 				992005A12622481D00709B04 /* SceneDelegate.swift */,
 				992005A52622481D00709B04 /* Main.storyboard */,
 				47FC919A262E50DF0092E478 /* MotivationViewController.swift */,
-				992005A82622481F00709B04 /* Assets.xcassets */,
 				992005AA2622481F00709B04 /* LaunchScreen.storyboard */,
 				992005AD2622481F00709B04 /* Info.plist */,
 				A322EA972630DE9400EC3E15 /* LoginViewController.swift */,
@@ -162,6 +170,18 @@
 				992005C32622481F00709B04 /* Info.plist */,
 			);
 			path = breatheUITests;
+			sourceTree = "<group>";
+		};
+		99FD27122643A990004787AB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				991500C72644B62B00E4C615 /* 14651-error-animation.json */,
+				991500C52644B62B00E4C615 /* 28436-fc-error-rays.json */,
+				991500C62644B62B00E4C615 /* 59674-erro-exchange.json */,
+				992005A82622481F00709B04 /* Assets.xcassets */,
+				99FD27192643C2DF004787AB /* 35593-goal-completed.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		BA34580C3EED3427FF303B0E /* Pods */ = {
@@ -295,6 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991500C92644B62B00E4C615 /* 59674-erro-exchange.json in Resources */,
+				991500C82644B62B00E4C615 /* 28436-fc-error-rays.json in Resources */,
+				991500CA2644B62B00E4C615 /* 14651-error-animation.json in Resources */,
+				99FD271A2643C2DF004787AB /* 35593-goal-completed.json in Resources */,
 				992005AC2622481F00709B04 /* LaunchScreen.storyboard in Resources */,
 				992005A92622481F00709B04 /* Assets.xcassets in Resources */,
 				992005A72622481D00709B04 /* Main.storyboard in Resources */,

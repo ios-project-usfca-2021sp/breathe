@@ -70,7 +70,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.74689787626266479" green="0.89902383089065552" blue="0.82907527685165405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74509803921568629" green="0.89803921568627454" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fwb-IC-mzp" firstAttribute="top" secondItem="zcY-Lg-fAP" secondAttribute="bottom" constant="58" id="6ic-66-1L4"/>
                             <constraint firstItem="xSJ-0X-tEu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="144" id="Ahq-Uf-3Mq"/>
@@ -378,7 +378,7 @@
                                 <rect key="frame" x="63" y="302" width="158" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="15"/>
-                                <color key="tintColor" red="0.23376163840293884" green="0.3238486647605896" blue="0.37540507316589355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.23529411764705882" green="0.32549019607843138" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="MotivationLabel">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -549,7 +549,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zYZ-Tg-aB0"/>
+        <segue reference="HoJ-2O-EoT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>

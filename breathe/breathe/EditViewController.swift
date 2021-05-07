@@ -8,14 +8,16 @@
 import UIKit
 import Parse
 import UserNotifications
+import Lottie
 
 class EditViewController: UIViewController {
     @IBOutlet weak var briefField: UITextView!
     @IBOutlet weak var detailField: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
-    
     @IBOutlet weak var alarmSwitch: UISwitch!
-
+    
+    var animationView: AnimationView?
+    
     @IBAction func onSwitch(_ sender: Any) {
         let center = UNUserNotificationCenter.current()
         let date = datePicker.date
@@ -61,31 +63,59 @@ class EditViewController: UIViewController {
         let task = PFObject(className: "Tasks")
         
         if briefField.text == "" {
-            let alert = UIAlertController(title: "Invalid Task Title", message: "Please input the task title.", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            
+            self.animationView = .init(name: "59674-erro-exchange")
+            self.animationView?.frame = CGRect(x: 0, y: 0, width: 230, height: 230)
+            self.animationView?.center = self.view.center
+            self.animationView?.animationSpeed = 1.2
+            self.view.addSubview(self.animationView!)
+            self.animationView?.play()
+            
+            let when = DispatchTime.now() + 1.5
+            DispatchQueue.main.asyncAfter(deadline: when){
+              // your code with delay
+                self.animationView?.removeFromSuperview()
+                let alert = UIAlertController(title: "Invalid Task Title", message: "Please input the task title.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             return
         }
         
         task["brief"] = briefField.text!
         task["detail"] = detailField.text!
-        task["user"] = PFUser.current()!
+//        task["user"] = PFUser.current()!
         
         task.saveInBackground {(success, error) in
             if success {
-                self.dismiss(animated: true, completion: nil)
+                self.animationView = .init(name: "35593-goal-completed")
+                self.animationView?.frame = CGRect(x: 0, y: 0, width: 230, height: 230)
+                self.animationView?.center = self.view.center
+                self.animationView?.animationSpeed = 1.2
+                self.view.addSubview(self.animationView!)
+                self.animationView?.play()
+                
+                let when = DispatchTime.now() + 1.5
+                DispatchQueue.main.asyncAfter(deadline: when){
+                  // your code with delay
+                    self.animationView?.removeFromSuperview()
+                    self.dismiss(animated: true, completion: nil)
+                }
+                
                 print("task added")
             } else {
                 let alert = UIAlertController(title: "Error adding task", message: "Please try again later.", preferredStyle: UIAlertController.Style.alert)
+                
                 alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
+
+                
             }
         }
     
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
