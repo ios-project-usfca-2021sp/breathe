@@ -29,13 +29,13 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
    - [x] front end - user can see an app icon and lauch screen.
 - User can log in.
    - [x] front end - user can see a login screen.
-   - [ ] back end - user can login via login screen. (started)
+   - [x] back end - user can login via login screen.
 - User can register.
    - [x] front end - user can see a register screen.
-   - [ ] back end - user can create new account via register screen. (started)
+   - [x] back end - user can create new account via register screen. 
 - User can log out.
-   - [ ] front end - user can see a logout button.
-   - [ ] back end - user can logout via logout button.
+   - [x] front end - user can see a logout button.
+   - [x] back end - user can logout via logout button.
 - User can see a list of tasks on the main screen.
    - [x] front end - user can see a todo task screen.
    - [x] back end - user can view all added tasks, and check off task on the todo task screen.
@@ -43,15 +43,15 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
    - [x] front end - user can see an editing task popover.
    - [x] back end - user can add task on this popover.
    - [x] back end error handling - user can see an error showing up when the task does not have title.
-   - [ ] back end - user can set an alarm which will have a notification.
+   - [ ] ~~back end - user can set an alarm which will have a notification. (feature not implemented as not available for free ios developer account)~~
 - User can delete a task.
    - [x] front end - user can see a check box on todo task screen.
-   - [ ] back end - user can delete task and disable alarm via check box.
-- User can see a motivational section with with healthy quotes/tips.
+   - [ ] ~~back end - user can delete task and disable alarm via check box.(feature not implemented as not available for free ios developer account)~~
+- User can see a motivational section with with healthy quotes/tips. (feature not implemented as not available for free ios developer account)
    - [x] front end - user can see a motivational screen.
-   - [x] back end - user can get random selected motiviational quote and health tips. (started)
+   - [x] back end - user can get random selected motiviational quote and health tips. 
 - User can see a new quote when the button is pressed.   
-   - [ ] front end - user can see a refresh button.
+   - [x] front end - user can see a refresh button.
    - [x] back end - user can get new quotes when pressing button.
 
 **Optional Nice-to-have Stories**
