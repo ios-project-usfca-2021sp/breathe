@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -199,7 +199,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onLogIn:" destination="5Xb-QK-Nhn" eventType="touchUpInside" id="FDG-AK-BJu"/>
-                                    <segue destination="sDl-1g-Omp" kind="presentation" identifier="loginSegue" id="zYZ-Tg-aB0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-j1-U9U">
@@ -231,6 +230,7 @@
                     <connections>
                         <outlet property="passwordField" destination="7I8-km-aJP" id="T9L-zG-F73"/>
                         <outlet property="usernameField" destination="y99-D5-8nR" id="RDf-7F-Hfs"/>
+                        <segue destination="sDl-1g-Omp" kind="show" identifier="loginSegue" id="8f5-VM-U9u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3J-kr-sES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -241,6 +241,7 @@
         <scene sceneID="ySa-zk-O25">
             <objects>
                 <tabBarController storyboardIdentifier="HomeTabBar" modalPresentationStyle="fullScreen" id="sDl-1g-Omp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3xV-bS-3MH"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FSo-ca-wba">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -260,12 +261,12 @@
             <objects>
                 <tableViewController id="I6P-uv-Eze" customClass="ToDoTableViewController" customModule="breathe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Swf-6b-w4H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellTableViewCell" rowHeight="164" id="DD0-I8-UWs" customClass="ToDoTableViewCell" customModule="breathe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="164"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="164"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DD0-I8-UWs" id="gkC-7z-f7R">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
@@ -325,7 +326,7 @@
                     <navigationItem key="navigationItem" title="To-Do List" id="UNJ-53-b3N">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="MBz-0M-7fj">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="VB1-mY-hmB">
-                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <rect key="frame" x="302" y="13" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="New Task">
@@ -349,9 +350,9 @@
         <scene sceneID="idL-z3-EMD">
             <objects>
                 <navigationController id="co8-Yj-N2t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tasks" selectedImage="list.bullet" catalog="system" id="Ve5-tk-fog"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="list.bullet" catalog="system" selectedImage="list.bullet" id="Ve5-tk-fog"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bmv-NB-g0P">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -396,7 +397,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="15"/>
                                 <color key="tintColor" red="0.23529411764705882" green="0.32549019607843138" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="MotivationLabel">
+                                <state key="normal" title="Motivation">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -408,7 +409,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="15"/>
                                 <color key="tintColor" red="0.23376163840293884" green="0.3238486647605896" blue="0.37540507316589355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="HealthyButton">
+                                <state key="normal" title="Health">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -461,7 +462,7 @@
         <scene sceneID="yzc-iH-0Gl">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" modalPresentationStyle="fullScreen" id="SoX-AF-QUM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Health" selectedImage="circle.grid.hex.fill" catalog="system" id="se5-gQ-1ob"/>
+                    <tabBarItem key="tabBarItem" title="Health" image="circle.grid.hex.fill" catalog="system" selectedImage="circle.grid.hex.fill" id="se5-gQ-1ob"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PEv-SU-Q0T">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -566,7 +567,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HoJ-2O-EoT"/>
+        <segue reference="8f5-VM-U9u"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
