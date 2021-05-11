@@ -47,7 +47,7 @@ Keeps track of user’s daily tasks/goals and allows them to set reminders throu
 - User can delete a task.
    - [x] front end - user can see a check box on todo task screen.
    - [ ] ~~back end - user can delete task and disable alarm via check box.(feature not implemented as not available for free ios developer account)~~
-- User can see a motivational section with with healthy quotes/tips. (feature not implemented as not available for free ios developer account)
+- User can see a motivational section with with healthy quotes/tips. 
    - [x] front end - user can see a motivational screen.
    - [x] back end - user can get random selected motiviational quote and health tips. 
 - User can see a new quote when the button is pressed.   
