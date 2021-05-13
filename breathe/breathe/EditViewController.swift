@@ -84,7 +84,7 @@ class EditViewController: UIViewController {
         
         task["brief"] = briefField.text!
         task["detail"] = detailField.text!
-//        task["user"] = PFUser.current()!
+        task["user"] = PFUser.current()!
         
         task.saveInBackground {(success, error) in
             if success {
